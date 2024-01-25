@@ -1,0 +1,12 @@
+                                                                          Array size: type safe at compile time
+Eg: 
+int a[]={11,2,33};
+int n=sizeof(a)/sizeof(a[0]);
+cout<<n;
+
+
+using c++11:
+
+int a[]={11,2,33};
+auto res=extent<decltype(a)>::value;
+cout<<res;
